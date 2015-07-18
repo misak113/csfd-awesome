@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "ČSFD awesome",
+  "description": "This extension add more features to csfd.cz page",
+  "version": "1.0.0",
+  "permissions": [
+    "tabs",
+    "http://www.csfd.cz/*"
+  ],
+  "content_scripts": [{
+    "matches": ["http://www.csfd.cz/*"],
+    "js": ["jquery-2.1.3.min.js", "csfd-awesome.js"]
+  }],
+  "web_accessible_resources": ["icon.png"]
+}
